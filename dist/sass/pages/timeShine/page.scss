@@ -1,0 +1,52 @@
+.upload-box {
+  max-width: 886px;
+  background-color: $white;
+  border-radius: 32px;
+  margin: 0 auto 32px;
+  padding: 80px 65px 26px;
+  text-align:center;
+  color: $black;
+
+  .subtitle-medium__mod {
+    margin-bottom: 48px;
+
+  }
+  .h3-title {
+    margin-bottom: 24px;
+
+  }
+  p {
+    max-width: 462px;
+    margin: 0 auto 32px;
+
+  }
+  &__img {
+    @include size(100px);
+    margin: 0 auto 32px;
+  }
+  &__btns {
+    max-width: 284px;
+    margin: 0 auto 60px;
+    .btn {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.upload__btn {
+  position: relative;
+  input {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.upload-terms {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: -0.015em;
+  opacity: 0.5;
+}
+

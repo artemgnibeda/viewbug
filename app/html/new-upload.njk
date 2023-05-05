@@ -1,0 +1,96 @@
+{% set title = 'Главная' %}
+{% extends 'layouts/layout.njk' %}
+{% block content %}
+    <div class="wrapper">
+{#        {% include 'components/header.njk' %}#}
+        <main class="main bg_purple">
+            <div class="container">
+                <div class="photo-box">
+                    <div class="photo-box__header">
+                        <div class="h4-title">Your new photos</div>
+                        <a href="" class="btn btn_pink btn_small">Upgrade to Premium to get more</a>
+                    </div>
+                    <div class="user-photo">
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo1.png')"></div>
+                        <div class="user-photo__item" style="background-image: url('./images/photo2.png')"></div>
+                        <div class="user-photo__upload">
+                            <input type="file" id="uploader" multiple>
+                            <label for="uploader">
+                                <img src="images/plus.svg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="h4-title">Recommended photo contests</div>
+                    <div class="recommend__list">
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">World Wonderer</span>
+                                <span class="recommend__text recommend_green"><img src="images/trophy.png" alt=""> Win The North Face Tent</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">World Wonderer</span>
+                                <span class="recommend__text recommend_green"><img src="images/trophy.png" alt=""> Win The North Face Tent</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">World Wonderer</span>
+                                <span class="recommend__text recommend_green"><img src="images/trophy.png" alt=""> Win The North Face Tent</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">World Wonderer</span>
+                                <span class="recommend__text recommend_green"><img src="images/trophy.png" alt=""> Win The North Face Tent</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="h4-title">Photo challenges from VIEWBUG members</div>
+                    <div class="recommend__list">
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">#theothersideofpitbulls</span>
+                                <span class="recommend__text recommend_green">@dario_barbani</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">#theothersideofpitbulls</span>
+                                <span class="recommend__text recommend_green">@dario_barbani</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">#theothersideofpitbulls</span>
+                                <span class="recommend__text recommend_green">@dario_barbani</span>
+                            </span>
+                        </div>
+                        <div class="recommend__item" style="background-image: url('./images/img1.jpeg')">
+                            <span class="recommend__info">
+                                <span class="recommend__text recommend_gray">#theothersideofpitbulls</span>
+                                <span class="recommend__text recommend_green">@dario_barbani</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'components/footer.njk' %}
+    </div>
+{% endblock %}

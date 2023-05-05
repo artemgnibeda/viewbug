@@ -1,0 +1,32 @@
+{% set title = 'Главная' %}
+{% extends 'layouts/layout.njk' %}
+{% block content %}
+    <div class="wrapper">
+{#        {% include 'components/header.njk' %}#}
+        <main class="main bg_purple">
+            <div class="container">
+                <div class="upload-box">
+                    <div class="subtitle-medium__mod">It’s your time to shine</div>
+                    <div class="h3-title">No photos yet? let’s change that</div>
+                    <p>Showcase your best photos. Get exposure, recognition and rewards from the amazing VIEWBUG community.</p>
+                    <div class="upload-box__img">
+                        <img src="images/photo.png" alt="">
+                    </div>
+                    <div class="upload-box__btns">
+                        <form action="" class="upload__btn">
+                            <input type="file" id="files" multiple>
+                            <label for="files" class="btn btn_pink">UPLOAD FROM COMPUTER</label>
+                        </form>
+                        <button type="button" class="btn btn_purple btn_facebook">
+                            <span class="icon icon-facebook"></span>
+                            ADD FROM FACEBOOK
+                        </button>
+                        <a href="" class="under-link">I’ll do this later</a>
+                    </div>
+                    <div class=" upload-terms">By uploading photos, you agree to <a href="" class="under-link"> VIEWBUG Terms of use.</a></div>
+                </div>
+            </div>
+        </main>
+        {% include 'components/footer.njk' %}
+    </div>
+{% endblock %}

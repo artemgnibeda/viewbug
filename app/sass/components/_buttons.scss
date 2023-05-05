@@ -1,0 +1,67 @@
+.button-2 {
+  color: $white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn {
+  padding: 19px 31px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115.4%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  @include r(767) {
+    font-size: 12px;
+    line-height: 110%;
+    padding: 17px 25px;
+  }
+  &_pink {
+    border-radius: 113px;
+    background-color: $pink;
+    color: $white;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+  &_purple {
+    border-radius: 113px;
+    background-color: $purple;
+    color: $white;
+    &:hover {
+      background-color: $pink;
+    }
+  }
+  &_facebook {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    .icon {
+      @include size(44px);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $purple;
+      margin-right: 12px;
+      border-radius: 50%;
+      background-color: $white;
+      @include r(767) {
+        @include size(40px);
+      }
+    }
+    @include r(767) {
+      padding: 3px;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        width: 40px;
+      }
+    }
+  }
+  &_small {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}

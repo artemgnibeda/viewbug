@@ -1,0 +1,22 @@
+.upload-box {
+  max-width: 886px;
+  background-color: $white;
+  border-radius: 32px;
+  padding: 80px 65px 26px;
+  text-align: center;
+  .subtitle-medium__mod {
+    margin-bottom: 48px;
+  }
+  .h3-title {
+    margin-bottom: 24px;
+  }
+  p {
+    max-width: 462px;
+    margin: 0 auto 32px;
+  }
+  &__img {
+    @include size(100px);
+    margin: 0 auto 32px;
+  }
+
+}
