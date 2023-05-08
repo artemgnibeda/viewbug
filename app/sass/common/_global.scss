@@ -4,9 +4,12 @@ body {
   color: $black;
   font-family: Montserrat, sans-serif;
 }
-
+.main .container {
+  display: block;
+}
 .container {
   width: 100% !important;
+  display: block;
   padding-left: 8vh;
   padding-right: 8vh;
   @include r(767) {
@@ -103,23 +106,38 @@ blockquote {
 
 h1, h2, h3, h4, h4, h6, .h1-title, .h2-title, .h3-title, .h4-title, .h5-title, .h6-title {
   display: block;
-  @include fb;
-  
 }
 
 h1, .h1-title {
-  @include css-lock(40, 48, 480, 1920);
-  line-height: 44px;
-  @include rmin(1200) {
-    line-height: 52px;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 100%;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  @include r(1000) {
+    font-size: 60px;
+  }
+  @include r(767) {
+    font-size: 34px;
   }
 }
 
 h2, .h2-title {
-  @include css-lock(30, 32, 480, 1920);
-  line-height: 34px;
-  @include rmin(1200) {
-    line-height: 44px;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  color: #000;
+  span {
+    color: $pink;
+  }
+  @include r(1000) {
+    font-size: 32px;
+  }
+  @include r(767) {
+    font-size: 26px;
+    letter-spacing: -0.025em;
   }
 }
 
@@ -136,6 +154,7 @@ h3, .h3-title {
   }
   @include r(767) {
     font-size: 26px;
+    letter-spacing: -0.025em;
   }
 }
 
@@ -214,4 +233,12 @@ h6, .h6-title {
     font-size: 10px;
     line-height: 115.4%;
   }
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.text-center {
+  text-align: center;
 }

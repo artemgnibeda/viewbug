@@ -12,6 +12,11 @@
   letter-spacing: -0.015em;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  @include r(767) {
+    font-size: 12px;
+    line-height: 110%;
+    padding: 17px 25px;
+  }
   &_pink {
     border-radius: 113px;
     background-color: $pink;
@@ -42,6 +47,17 @@
       margin-right: 12px;
       border-radius: 50%;
       background-color: $white;
+      @include r(767) {
+        @include size(40px);
+      }
+    }
+    @include r(767) {
+      padding: 3px;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        width: 40px;
+      }
     }
   }
   &_small {

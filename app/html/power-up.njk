@@ -1,0 +1,207 @@
+{% set title = 'Главная' %}
+{% extends 'layouts/layout.njk' %}
+{% block content %}
+    <div class="wrapper">
+        {#        {% include 'components/header.njk' %} #}
+        <main class="main">
+            <div class="container power-up">
+                <div class="power-up__header">
+                    <div class="h2-title"><span>achieve amazing things</span>
+                        in your photography. Never settle for mediocrity.
+                    </div>
+                    <p>It's easy to get comfortable with what You know and what You’re good at, but true greatness comes
+                        from pushing Yourself outside of you comfort zones and challenging Yourself to grow and
+                        evolve.</p>
+                </div>
+
+                <div class="upgrade__row">
+                    <div class="payment-block">
+                        <div class="payment-block__title">Upgrade today for a special price!</div>
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                                <span class="hours countdown-time"></span>
+                                <span class="countdown-text">Hours</span>
+                            </div>
+                            <span>:</span>
+                            <div class="countdown-number">
+                                <span class="minutes countdown-time"></span>
+                                <span class="countdown-text">Minutes</span>
+                            </div>
+                            <span>:</span>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time"></span>
+                                <span class="countdown-text">Seconds</span>
+                            </div>
+                        </div>
+                        <form class="payment-form">
+                            <div class="payment-form__header">
+                                <div class="payment-block__title">Upgrade now</div>
+                                <div class="payment__list">
+                                    <div class="payment__item">
+                                        <input type="radio" id="card" name="payment" checked>
+                                        <label for="card">
+                                            <img src="images/card.svg" alt="card"> Credit / Debit
+                                        </label>
+                                    </div>
+                                    <div class="payment__item">
+                                        <input type="radio" id="paypal" name="payment">
+                                        <label for="paypal">
+                                            <img src="images/paypal.svg" alt="paypal">
+                                        </label>
+                                    </div>
+                                    <div class="payment__item">
+                                        <input type="radio" id="pay" name="payment">
+                                        <label for="pay">
+                                            <img src="images/pay.svg" alt="pay">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-form">
+                                <div class="input__container card-number">
+                                    <input type="text" placeholder="Card number">
+                                    <img src="images/visa.svg" alt="">
+                                </div>
+                                <div class="input__container cvv">
+                                    <input type="text" placeholder="CVV">
+                                </div>
+                                <div class="input__container date">
+                                    <input type="text" placeholder="MM/YYYY">
+                                </div>
+                                <div class="input__container zip">
+                                    <input type="text" placeholder="Postal/ZIP code">
+                                </div>
+                            </div>
+                            <div class="payment-block__total">
+                                <div class="payment-block__text">Total:</div>
+                                <div class="payment-block__price"><span>$12</span>/Month*</div>
+                            </div>
+                            <button type="button" class="btn btn_pink">Subscribe to Platinum Membership</button>
+                            <div class="note">*Billed annually.</div>
+                            <p>Your subscription will automatically renew. You can cancel the subscription at any time or change your payment method in your account settings. Visit
+                                <a href="">VIEWBUG Terms & Conditions</a> to learn more. Your purchase helps our community to
+                                <a href="">plant trees and help the planet</a>. Thank you for becoming a premium member of VIEWBUG.</p>
+                        </form>
+                    </div>
+                    <div class="upgrade__plan">
+                        <table>
+                            <tr>
+                                <th>Upgrade Yourself</th>
+                                <th>
+                                    Basic
+                                    <span>Free</span>
+                                </th>
+                                <th>
+                                    Platinum
+                                    <span>Free</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Exposure boost</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Premium contests</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>VIEWBUG features</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited uploads</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited storage</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Member map</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Mystery challenges</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>A portfolio website</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Photo sales tools</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Photography Gigs</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Photography Gigs</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>50+ photo tutorials</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>40 premium Lr presets</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><b>NEW!</b> 2X reward coins</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><b>NEW!</b> AI Concierge</td>
+                                <td>-</td>
+                                <td><img src="images/check.svg" alt=""></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="quote__section">
+                    <div class="h3-title">Thousands of photographers have taken it to the next level. Are you ready?</div>
+                    <div class="quote__text">
+                        <img src="images/quote.png" class="quote" alt="">
+                        <p>I’ve challenged myself to create and share photos on a daily basis. And became the Platinum Member. This is the best investment I’ve done in years.</p>
+                        <div class="quote__author">
+                            <img src="images/author.png" alt="">
+                            Garycox1
+                        </div>
+                    </div>
+                </div>
+                <div class="h1-title text-center purple-text">FAQ</div>
+                <div class="faq">
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header active">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body" style="display: block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'components/footer.njk' %}
+    </div>
+{% endblock %}

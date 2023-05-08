@@ -1,0 +1,83 @@
+.faq {
+  margin-top: 60px;
+  &__item {
+    background: rgba(94, 67, 218, 0.1);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 40px;
+    @include r(1000) {
+      padding: 32px 24px;
+    }
+    @include r(767) {
+      padding: 16px;
+    }
+  }
+  &__header {
+    text-transform: none;
+    position: relative;
+    padding-right: 45px;
+    cursor: pointer;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 4px;
+      background-color: $purple;
+      @include r(767) {
+        width: 24px;
+        height: 3px;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%) rotate(90deg);
+      width: 32px;
+      height: 4px;
+      background-color: $purple;
+      transition: 0.3s ease-in-out;
+      @include r(767) {
+        width: 24px;
+        height: 3px;
+      }
+    }
+    &.active {
+      &:before {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+  &__body {
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    display: none;
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: -0.01em;
+    }
+    @include r(767) {
+      font-size: 14px;
+      line-height: 160%;
+      p {
+        font-size: 14px;
+        line-height: 160%;
+      }
+    }
+  }
+  @include r(1000) {
+    margin-top: 40px;
+  }
+  @include r(767) {
+    margin-top: 24px;
+  }
+}

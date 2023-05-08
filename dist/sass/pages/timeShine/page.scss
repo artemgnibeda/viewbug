@@ -6,23 +6,43 @@
   padding: 80px 65px 26px;
   text-align:center;
   color: $black;
+  @include r(767) {
+    padding: 64px 24px 18px;
+  }
 
   .subtitle-medium__mod {
     margin-bottom: 48px;
+    @include r(767) {
+      margin-bottom: 24px;
+    }
 
   }
   .h3-title {
     margin-bottom: 24px;
+    @include r(767) {
+      margin-bottom: 16px;
+    }
 
   }
   p {
     max-width: 462px;
     margin: 0 auto 32px;
-
+    @include r(1200) {
+      max-width: 400px;
+    }
+    @include r(767) {
+      margin-bottom: 24px;
+    }
   }
   &__img {
     @include size(100px);
     margin: 0 auto 32px;
+    img {
+      width: 100%;
+    }
+    @include r(767) {
+      @include size(80px);
+    }
   }
   &__btns {
     max-width: 284px;
@@ -30,6 +50,13 @@
     .btn {
       width: 100%;
       margin-bottom: 12px;
+    }
+    @include r(767) {
+      margin-bottom: 30px;
+      .under-link {
+        display: inline-block;
+        margin-top: 30px;
+      }
     }
   }
 }
@@ -48,5 +75,10 @@
   line-height: 140%;
   letter-spacing: -0.015em;
   opacity: 0.5;
+  @include r(767) {
+    font-size: 10px;
+    line-height: 115.4%;
+    margin: 0 -20px;
+  }
 }
 
