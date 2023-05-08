@@ -36,11 +36,25 @@ $(document).ready(function () {
 
   // let deadline="January 01 2024 00:00:00 GMT+0300"; //for Ukraine
   var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
-  initializeClock('countdown', deadline);
+  if ($('#countdown').length) {
+    initializeClock('countdown', deadline);
+  }
 
   //faq
-
   $('.js-accordion-header').on('click', function () {
     $(this).toggleClass('active').siblings('.js-accordion-body').slideToggle();
+  });
+
+  //category
+
+  $('.js-category-toggle').on('click', function () {
+    $(this).toggleClass('active').siblings('.js-category-list').slideToggle();
+  });
+  $(document).mouseup(function (e) {
+    var div = $(".js-category-toggle,.js-category-list");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      $('.js-category-list').slideUp();
+      $('.js-category-toggle').removeClass('active');
+    }
   });
 });

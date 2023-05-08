@@ -1,0 +1,142 @@
+{% set title = 'Главная' %}
+{% extends 'layouts/layout.njk' %}
+{% block content %}
+    <div class="wrapper">
+        {#        {% include 'components/header.njk' %}#}
+        <main class="main">
+            <div class="container showcase">
+                <div class="h1-title text-center">
+                    Showcase your photos
+                    to win prizes 🥳
+                </div>
+                <div class="subtitle-large__mod text-center">13 contests open for you, get the membership to unlock all 42 plus weekly drops.</div>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Abstract</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Action</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Animals</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Architecture</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Black & White</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Colors</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">City</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Fashion</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Food</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Landscapes</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Macro</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Nature</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Night</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Objects</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">People</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Transportation</a>
+                    </li>
+                    <li class="filter__item">
+                        <a href=""  class="filter__btn">Water</a>
+                    </li>
+                    <li class="filter__item">
+                        <button  class="category__btn-toggle js-category-toggle">
+                            <span class="icon icon-filter"></span>
+                        </button>
+                        <ul class="category__list js-category-list">
+                            <li>
+                                <a href=""  class="category__btn active">All</a>
+                            </li>
+                            <li>
+                                <a href=""  class="category__btn">Prize Value</a>
+                            </li>
+                            <li>
+                                <a href=""  class="category__btn">Premium</a>
+                            </li>
+                            <li>
+                                <a href=""  class="category__btn">Closing Soon</a>
+                            </li>
+                            <li>
+                                <a href=""  class="category__btn">Vote</a>
+                            </li>
+                            <li>
+                                <a href=""  class="category__btn">Winners</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="showcase__list">
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful Outdoors Photo Contest</div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall">Participate</a>
+                        </div>
+                    </div>
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="premium"><img src="images/premium.svg" alt=""> Premium</div>
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful </div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall disabled">Unlock</a>
+                        </div>
+                    </div>
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful Outdoors Photo Contest</div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall">Participate</a>
+                        </div>
+                    </div>
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="premium"><img src="images/premium.svg" alt=""> Premium</div>
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful </div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall disabled">Unlock</a>
+                        </div>
+                    </div>
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful Outdoors Photo Contest</div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall">Participate</a>
+                        </div>
+                    </div>
+                    <div class="showcase__item" style="background-image: url('images/showcase1.jpeg')">
+                        <div class="premium"><img src="images/premium.svg" alt=""> Premium</div>
+                        <div class="showcase__info">
+                            <div class="showcase__title h3-title">The Colorful </div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <a href="" class="btn btn_purple btn_extrasmall disabled">Unlock</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'components/footer.njk' %}
+    </div>
+{% endblock %}
