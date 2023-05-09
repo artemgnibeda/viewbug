@@ -1,0 +1,103 @@
+{% set title = 'Главная' %}
+{% extends 'layouts/layout.njk' %}
+{% block content %}
+    <div class="wrapper">
+        {#        {% include 'components/header.njk' %}#}
+        <main class="main padding-0">
+            <div class="first-screen" style="background-image: url('images/first-screen.jpeg')">
+                <div class="container">
+                    <div class="first-screen__row">
+                        <div class="first-screen__info">
+                            <div class="h1-title">The Colorful Outdoors Photo Contest</div>
+                            <p>🎁 Win Feature On Flipboard</p>
+                            <div class="first-screen__btns">
+                                <a href="" class="btn btn_purple btn_extrasmall">Submit photos for a chance to win</a>
+                                <a href="" class="btn btn_white btn_extrasmall">Learn more</a>
+                            </div>
+                        </div>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="" target="_blank" class="social__link">
+                                    <span class="icon icon-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" target="_blank" class="social__link">
+                                    <span class="icon icon-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" target="_blank" class="social__link">
+                                    <span class="icon icon-linkedin"></span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" target="_blank" class="social__link">
+                                    <span class="icon icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <section class="personal__block">
+                    <div class="h1-title text-center purple-text">Meet the Master Judge</div>
+                    <div class="personal__img">
+                        <img src="images/personal.jpeg" alt="">
+                    </div>
+                    <div class="personal__name">Gail Bowman</div>
+                    <div class="personal__text content">
+                        <p>I'm Gail Bowman from San Diego California. An award winning Fashion Photographer with 15 years of experience creating model portfolios for individuals and international modeling agencies. From fledgling models to seasoned actors, my work can be found in Vogue Italia to IMDB.
+                            <a href="">Read more</a></p>
+                    </div>
+                </section>
+
+                <div class="info-block content">
+                    Welcome to the Action-Packed photo contest! This is a competition for photographers who love capturing the thrill and excitement of action-packed moments. We are looking for photos that capture movement, energy, and excitement in a single frame. Whether it's sports, adventure, or any other fast-paced activity, we want to see your best shots that showcase the action.
+                </div>
+                <div class="card__list">
+                    <div class="card__item">
+                        <div class="h3-title">Grand Jury Winner</div>
+                        <div class="card__info content">
+                            <p>🎁  $300 Donation on the winner's behalf</p>
+                            <p>🎁  50 VIEWBUG Coins</p>
+                            <p> 🎁  NIKON D850</p>
+                        </div>
+                        <div class="card__img">
+                            <img src="images/card1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="h3-title">People's Choice</div>
+                        <div class="card__info content">
+                            <p>🎁  $300 Donation on the winner's behalf</p>
+                            <p>🎁  50 VIEWBUG Coins</p>
+                            <p> 🎁  NIKON D850</p>
+                        </div>
+                        <div class="card__img">
+                            <img src="images/card1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h1-title text-center purple-text">FAQ</div>
+                <section class="faq">
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header active">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body" style="display: block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="faq__item js-accordion-item">
+                        <div class="faq__header h3-title js-accordion-header">What are the premium benefits?</div>
+                        <div class="faq__body js-accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        {% include 'components/footer.njk' %}
+    </div>
+{% endblock %}

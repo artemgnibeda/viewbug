@@ -18,6 +18,13 @@
     line-height: 110%;
     padding: 17px 25px;
   }
+  &_white {
+    border-radius: 113px;
+    background-color: $white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
   &_pink {
     border-radius: 113px;
     background-color: $pink;
@@ -30,6 +37,9 @@
     border-radius: 113px;
     background-color: $purple;
     color: $white;
+    &.disabled {
+      background: #AEA1ED;
+    }
     &:hover {
       background-color: $pink;
     }

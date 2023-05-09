@@ -1,0 +1,78 @@
+.first-screen {
+  height: calc(100vh - 64px);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 843px;
+    .h1-title {
+      color: $white;
+      margin-bottom: 24px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:24px;
+  }
+}
+
+.social {
+  &__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &__link {
+    transition: 0.3s ease-in-out;
+    color: $white;
+    font-size: 32px;
+    text-align: center;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+
+.card {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 140px;
+    @include r(1000) {
+      margin-bottom: 80px;
+    }
+    @include r(767) {
+      margin-bottom: 60px;
+    }
+  }
+  &__item {
+    padding: 80px;
+    background: #EFECFB;
+    border-radius: 40px;
+    .h3-title {
+      margin-bottom: 16px;
+    }
+  }
+  &__info {
+    margin-bottom: 32px;
+  }
+  &__img {
+    max-height: 240px;
+    max-width: 100%;
+  }
+}

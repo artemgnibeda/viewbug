@@ -11,6 +11,9 @@ $icon_font_name:"Icons";
 %icon-facebook,
 %icon-filter,
 %icon-heart,
+%icon-linkedin,
+%icon-mail,
+%icon-twitter,
 %last_selector {
          &:before {
            font-family:$icon_font_name;
@@ -63,4 +66,13 @@ $icon_font_name:"Icons";
 }
 %icon-heart:before {
   content:'\E004';
+}
+%icon-linkedin:before {
+  content:'\E005';
+}
+%icon-mail:before {
+  content:'\E006';
+}
+%icon-twitter:before {
+  content:'\E007';
 }
